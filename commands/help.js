@@ -7,9 +7,6 @@ module.exports.run = async(bot, message, args) => {
   .addField("**Komendy z kategorii zdj profilowe**", "**avatar - pokazuje twój avatar**")
   .addField("**Komendy z kategorii GIFy**", "**kiss <użytkownik> - Całujesz kogoś :*** \n **hug <użytkownik> - Przytulasz kogoś :)**")
   message.channel.send(embed);
-  const time = setTimeout(function() => {
-  	message.channel.send("Wysyłam komendy...")
-  }, 2000);
 }
 
 module.exports.help = {
