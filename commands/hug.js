@@ -5,7 +5,7 @@ module.exports.run = async(bot, message, args) => {
   let embed = new Discord.RichEmbed()
   number = 8;
   imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-  message.channel.send(`${message.author.user} przytulił ${osoba}`, {files: ["./hug/" +imageNumber + ".gif"]} )
+  message.channel.send(`${message.author.username} przytulił ${osoba}`, {files: ["./hug/" +imageNumber + ".gif"]} )
 }
 
 module.exports.help = {
