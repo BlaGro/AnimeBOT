@@ -7,7 +7,6 @@ module.exports.run = async(bot, message, args) => {
   .addField("**Komendy z kategorii zdj profilowe**", "**avatar - pokazuje twój avatar**")
   .addField("**Komendy z kategorii GIFy**", "**kiss <użytkownik> - Całujesz kogoś :*** \n **hug <użytkownik> - Przytulasz kogoś :)**")
   message.channel.send(embed);
-  message.channel.send("Cześć" {tts: true})
 }
 
 module.exports.help = {
