@@ -5,7 +5,7 @@ module.exports.run = async(bot, message, args) => {
   let embed = new Discord.RichEmbed()
   .setDescription(`Avatar użytkownika ${message.author.username}`)
   .addField("Łapaj avatarek", "Fajny co nie?")
-  .setImage(avatar)
+  .setImage(message.mentions.users.first.avatar || avatar)
   message.channel.send(embed);
 }
 
